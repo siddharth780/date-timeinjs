@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+				<!--   DATE -->
+
+	<script type="text/javascript">
+		// var d = new Date();     // D should be in UPPERCASE
+		// document.write(d);
+		// now, if we follow the syntax {
+		//		var d = new Date(yyyy,mm,dd) containing all the three values, mm begins from 0, so
+																		//   0-jan......11dec
+			// if we just write two values inside the Date(yyyy, mm) --> only year and month, in this case, the date will always be 01.
+		//          AND
+		//  if we just write the year inside the parameters i.e. Date(yyyy), then it will show just a random date like June 1, 1970.
+			// getFullYear() -> gives us the year value (yyyy).
+			// getMonth() -> gives the month value. (0-11)
+			// getDate -> gives the date. (1-31)
+			//}
+
+			//----------------
+
+				// TO SHOW THE PRESENT DATE AS IN OUR DEVICES
+
+			var dateobject = new Date();
+			var year = dateobject.getUTCFullYear();
+			var month = dateobject.getUTCMonth() + 1;  // +1 because month starts from 0
+			var date = dateobject.getUTCDate();
+
+			document.write(year + "/" + month + "/" + date);
+			document.write("<br>");
+
+			//to set a date, use .setMonth, .setFullYear, .setDate
+
+			//      To set the TIME
+
+			// If I write the code as 
+			//		var d = new Date();
+			//		var n = d.getTime() --> This will return the time in milliseconds since 1/1/1970 so we dont use this
+			//	instead,
+
+			   var d = new Date();
+			   var n = d.getTime();
+
+			   var seconds = d.getSeconds();
+			   var minutes = d.getMinutes();
+			   var hours = d.getHours();
+
+			   document.write(hours + ":"+ minutes+":"+ seconds);
+
+	</script>
+<!-- // ---------------------------------------------------------
+
+			   //			SET DYNAMIC TIME -->
+
+			    
+
+			<h2>Current Time:</h2><br>
+			<p id="ShowClock"></p>
+			<button>Click here</button><br>
+			<button onclick="clearInterval(currtime)">STOP TIME</button>
+
+			<script type="text/javascript">
+				var currtime = setInterval(timeee,1000)
+
+				function timeee(){
+				var dd= new Date();
+				var ss = dd.toLocaleTimeString();   //Basically this .toLocaleTimeString cuts out the time portion from the whole date
+
+				document.getElementById('ShowClock').innerHTML = ss;
+				
+			}
+			</script>
+
+			<!-- 				SET TIMEOUT           -->
+
+			<h2>Set TimeOut</h2><br>
+			<p><i>You have to press the below button before the stipulated time given..(in this case, 4 seconds)</i></p>
+			<button onclick="clearInterval(s)">Click ME </button><br><br>
+
+			<script type="text/javascript">
+				var s = setInterval(myfunc,4000);
+
+				function myfunc(){
+					alert("Time Over!");
+				}
+			</script>
+
+</body>
+</html>
