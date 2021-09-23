@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+	<!-- SYNCHRONOUS VS ASYNCHRONOUS PROGRAMMING in JavaScript
+		1. Synchronous - Synchronous programming is step-by-step programming. In simpler words,
+				  		  you cannot start a new task unless you've finished the previous one.
+
+		2. Asynchronous - You can do multiple tasks simultaneously.
+-->
+
+	<script>
+
+	 // PLEASE JUST COPY THE CODE(inside the box) WHILE TESTING AND REMOVE EVERYTHING ELSE :) 
+
+	//  ---	-------------------------------------------------------------------	
+	// |	const myfun2 = () => {											   |
+	// |																	   |   This is how synchronus programming will work:
+	// |		console.log("The second function starts here.");			   |        Output in console : 
+	// |	}															       |             1. The first function starts here  
+	// |																	   |				   and now!
+	// |	const myfun1 = () => {											   |   			  2. The second function starts here.
+	// |		console.log("The first function starts here and now!");		   |			  3. The first function ends here!
+	// |		myfun2();													   |
+	// |		console.log("The first function ends here!");                  |
+	// |	}																   |
+	// |																	   |
+	// |	myfun1();														   |
+	// ------------------------------------------------------------------------
+
+	//  ---	-------------------------------------------------------------------	
+	// |		const myfun2 = () => {	                                       |
+	// |	    setTimeOut( () =>{									           |   This is how asynchronus programming will work:
+	// |																	   |    Output in console :
+	// |		console.log("The second function starts here.");			   |     1.The first function starts here and now!
+	// |		},3000);                                                       |     Note- As you can see that we have used the
+	// |		}															   |           setTimeOut function and set the time 
+	// |																	   |		   to 3000ms which is 3s so it will asy-	                                                                                   nchronously print :
+	// |	const myfun1 = () => {											   |   		 
+	// |		console.log("The first function starts here and now!");		   |	 2. The first function ends here!(as it does		                                                                              not wait).
+	// |		myfun2();													   |     3. The second function starts now (after 3
+	// |		console.log("The first function ends here!");                  |         seconds)
+	// |	}																   |
+	// |																	   |
+	// |	myfun1();														   |
+	// ------------------------------------------------------------------------
+
+
+	</script>
+
+
+
+</body>
+</html>
