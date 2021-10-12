@@ -1,0 +1,33 @@
+<!-- REMOVE THE COMMENTS BEFORE RUNNING IT :)-->
+
+<!--		FIZZBUZZ Problem*                     
+				-----------------				-->              
+
+	<script type="text/javascript">
+		// we also can declare an empty array 
+	//  var fizzbuzz = []; and,
+	// we need to declare and call a function.
+		var i = 1;  
+
+		// function fizbuz(){
+		while(i<=100){
+			if(i%3==0 && i%5==0){
+				console.log("FizzBuzz"); // instead of console.log, we can write fizzbuzz.push("FizzBuzz");
+			}
+			else if(i % 3 == 0){
+				console.log("Fizz"); // instead of console.log, we can write fizzbuzz.push("Fizz");
+			}
+			
+			else if(i % 5 == 0){
+				console.log("Buzz"); // instead of console.log, we can write fizzbuzz.push("Buzz");
+			}
+			else{
+				console.log(i);
+			}
+			i++;
+		}
+
+	//}
+//   fizbuz();	
+
+	</script>
