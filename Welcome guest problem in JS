@@ -1,0 +1,24 @@
+<!-- REMOVE ALL THE COMMENTS BEFORE RUNNING IT :)-->
+
+<!--       WELCOME GUEST PROBLEM   
+			---------------------------				-->
+
+
+	<!-- <script type="text/javascript">
+		
+		var realmadrid = ["Navas","Carvajal","Pepe","Ramos","Marcelo","Kroos","Casemiro","Modric","Bale","Benzema","Cristiano"];
+
+		var players = prompt('Tell us your Id sir..');
+
+		var check = realmadrid.includes(players);   // array.includes(parameter) -> takes the complete array.
+
+		if(check == true){
+			alert("Welcome Sir, its a pleasure to meet you..!");
+		}
+		else{
+			alert("Ayo! Its not your party fella, get the hell outta here!");
+		}
+
+
+
+	</script> -->
