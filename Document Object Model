@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<!-- Document Object Model 
+So Document is the complete page which includes everything.
+   Object are the elements and attributes.
+   Model is the layout of the content, having the siblings, children nodes and all.
+-->
+
+   <!-- <p id="UEFA"> UEFA </p>                   
+   <p class="Champions"> CHAMPIONS LEAGUE </p>   
+   <p class="Champions"> CHAMPIONS LEAGUE 2</p>
+   <p class="Champions"> CHAMPIONS LEAGUE 3</p> -->
+
+
+<!--       Accessing elements by ID 
+ -->
+
+   <!-- <script type="text/javascript">
+   	var a = document.getElementById("UEFA").innerHTML;
+   	document.write(a);
+
+   </script> -->
+
+
+<!--          Accessing elements from Class
+ -->
+
+   <!-- <script type="text/javascript">
+      var b = document.getElementsByClassName("Champions")[0].innerHTML;
+      document.write(b);
+   </script> -->
+
+
+<!--             Accessing elements by Tag Name
+ -->
+
+   <!-- <script type="text/javascript">
+      var tag = document.getElementsByTagName("p");
+      document.write(tag);
+      console.log(tag);
+   </script> -->
+
+
+<!--             To select the first value
+ -->
+
+   <!-- <script type="text/javascript">
+      var p = document.querySelector('p').innerHTML;
+      document.write(p);
+   </script> -->
+
+
+   <!-- <p id="UEFA"> UEFA </p>                   
+   <p class="Champions"> CHAMPIONS LEAGUE </p>   
+   <p class="Champions"> CHAMPIONS LEAGUE 2</p>
+   <p class="Champions"> CHAMPIONS LEAGUE 3</p>
+
+   <ul>
+      <li>Real Madrid (13)</li>
+      <li>AC Milan (7)</li>
+      <li>Liverpool (6)</li>
+   </ul> -->
+
+<!--          Accessing Children of the body
+ -->
+
+   <!-- <script type="text/javascript">
+      var child = document.body.children;
+      console.log(child);
+   </script> -->
+
+<!--             Appending new child to the body
+ -->
+   <!-- <script type="text/javascript">
+      var para = document.createElement('p');
+      var textnode = document.createTextNode("The Chammmpionnnsssss..");
+
+      para.appendChild(textnode);
+      console.log(para);
+
+      document.body.appendChild(para);
+
+   </script> -->
+
+<!--                Accessing first and the last child
+ --> 
+   <!-- <script type="text/javascript">
+         var list = document.querySelector("ul");
+         console.log(list);
+
+         console.log(list.firstChild);
+         console.log(list.lastChild);
+
+         var firstsibling = UEFA.nextElementSibling.nextElementSibling;
+         console.log(firstsibling);
+
+         console.log(list.parentNode);
+   </script> -->
+   
+   </body>
+</html>
